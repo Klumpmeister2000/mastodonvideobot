@@ -51,7 +51,7 @@ mastodon = Mastodon(
 )
 
 media_file = 'output file'
-media_id = mastodon.media_post(media_file, description='Out of Context Pete and Pete Clip')
+media_id = mastodon.media_post(media_file, description='This is my video clip!')
 try:
     mastodon.status_post('This is my video clip!', media_ids=[media_id])
 
